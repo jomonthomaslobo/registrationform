@@ -17,15 +17,20 @@
           
         </div>
         <div class="em">
-          <input type="email" placeholder="E-mail *"  />
+          <input type="email" placeholder="E-mail *" onkeyup="emailValidation(this)"  id="mail"/>
+          
+        </div>
+        <div class="em">
+          <input type="tel" placeholder="phone *" onblur="requiredVal(this)" />
         </div>
         <div class="orp">
-          <input type="password" placeholder="Password *"  />
+          <input type="password" placeholder="Password *" id="password" />
+          <span id="StrengthDisp" class="badge displayBadge">Weak</span>
         </div>
         <div class="confp">
           <input type="password" placeholder="Confirm Password *"  />
         </div>
-        <button type="submit" disabled>Sign Up</button>
+        <button type="button" onclick="validateAll()">Sign Up</button>
         <h5>Have an Account? <a href="loginform.html"> Log In Here</a></h5>
         <hr />
         
